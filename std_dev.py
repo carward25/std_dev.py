@@ -18,10 +18,3 @@ def std_dev(person_list):
     for person in person_list:
         total += (person.age - m) ** 2
     return (total / (len(person_list) - 1)) ** 0.5
-
-
-p1 = Person("Kyoungmin", 73)
-p2 = Person("Mercedes", 24)
-p3 = Person("Beatrice", 48)
-person_list = [p1, p2, p3]
-print(std_dev(person_list))
